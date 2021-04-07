@@ -5,7 +5,8 @@ from geopy.geocoders import GoogleV3 #cannot store goole API data longer then 30
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import NearestNeighbors
 
-with open(r'C:\\Users\Talapoin\Desktop\Data_Science\MMdata\generateReqs\APIKey.txt') as f:
+fixsoidonthavetolearnsomethingnew = r'C:\\Users\Talapoin\Desktop\Data_Science\MMdata\generateReqs\APIKey.txt'
+with open(fixsoidonthavetolearnsomethingnew) as f:
     lines = f.readlines()
 key=lines[0]
 
