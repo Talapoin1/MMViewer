@@ -5,12 +5,8 @@ from geopy.geocoders import GoogleV3 #cannot store goole API data longer then 30
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import NearestNeighbors
 
-import pathlib
-
-fixsoidonthavetolearnsomethingnew = pathlib.Path('C:\APIKey.txt')
-with open(fixsoidonthavetolearnsomethingnew) as f:
-    lines = f.readlines()
-key=lines[0]
+fixsoidonthavetolearnsomethingnew = pd.read_csv('C:\\Users\Talapoin\Desktop\Data_Science\MMdata\generateReqs\APIKey.txt',header=None)
+key=fixsoidonthavetolearnsomethingnew[0][0]
 
 
 #Function Definitions
