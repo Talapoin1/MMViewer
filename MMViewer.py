@@ -7,7 +7,7 @@ from sklearn.neighbors import NearestNeighbors
 
 import os
 
-fixsoidonthavetolearnsomethingnew = os.path.normpath('C:/Users/Talapoin/Desktop/Data_Science/MMdata/generateReqs/APIKey.txt'
+fixsoidonthavetolearnsomethingnew = os.path.normpath('C:/Users/Talapoin/Desktop/Data_Science/MMdata/generateReqs/APIKey.txt')
 with open(fixsoidonthavetolearnsomethingnew) as f:
     lines = f.readlines()
 key=lines[0]
