@@ -4,9 +4,14 @@ import numpy as np
 from geopy.geocoders import GoogleV3 #cannot store goole API data longer then 30 days
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import NearestNeighbors
+import os
 
-fixsoidonthavetolearnsomethingnew = pd.read_csv(r'C:\\Users\Talapoin\Desktop\Data_Science\MMdata\generateReqs\APIKey.txt',header=None)
-key=fixsoidonthavetolearnsomethingnew[0][0]
+bne=os.path.realpath(r'C:\\Users\Talapoin\Desktop\Data_Science\MMdata\generateReqs\APIKey.txt')
+with open(bne) as f:
+    lines = f.readlines()
+key=lines[0]
+#fixsoidonthavetolearnsomethingnew = pd.read_csv(r'C:\\Users\Talapoin\Desktop\Data_Science\MMdata\generateReqs\APIKey.txt',header=None)
+#key=fixsoidonthavetolearnsomethingnew[0][0]
 
 
 #Function Definitions
